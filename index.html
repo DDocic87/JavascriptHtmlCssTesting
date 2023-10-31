@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Davor" />
+		<meta name="vieport" content="width=device-width" />
+		<title>JsHtmlCss test page</title>
+		<link rel="icon" href="favicon16.ico" type="image/x-icon"/>
+	</head>
+	<body>
+		<h1>HTML</h1>
+
+		<h3>Parts of an HTML element</h3>
+
+		<!--Element-->
+		<p><b>Element:</b> elements can be nested.</p>
+		<pre><code>	&lt;someElement&gt;	</code>	</pre>
+
+		<!--Tag-->
+		<p><b>Tag</b>: tags are not case sensitive.</p>
+		<pre><code>	&lt;openingTag&gt; &lt;/closingTag&gt;	</code>	</pre>
+
+		<!--Attribute-->
+		<p><b>Attribute:</b> if it has no value it's called boolean attribute.</p>
+		<pre><code>	&lt;someElement someAttribute=someValue&gt;	</code>	</pre>
+
+		<!--Special characters-->
+		<p><b>Special characters:</b> (&lt; = &+lt+;) (&gt; = &+gt+;) (&quot; = &+quot+;) (&apos; = &+apos+;) (&amp; = &+amp+;)</p>
+
+		<h3>Text visual </h3>
+
+		<p><b>Bold:</b> <b>b</b> or <strong>strong</strong></p>
+		<p>Italic: <i>i</i> or <em>em</em></p>
+		<p>Span and i: <span>span</span>, inline-level element, used mostly for style grouping</p>
+
+		<p>Input: has a <strong>boolean attribute</strong> that has no value (&lt;input disabled&gt;, same as &lt;input disabled="true"&gt;)</p><input type="text" size="50" disabled placeholder="Input element with placeholder text"/>
+		<p>Image: is a void element because it consists only of a single opening tag.
+		<pre>	<code>&lt;img src="someLink" alt="alternative text"&gt;</code>	</pre></p>
+		<img src="https://cfw.sarna.net/news/wp-content/uploads/2019/03/Thunder-Fox-drawn-by-Shimmering-Sword-625x398.jpg" alt="battletech mech wallpaper" width="10%" height="10%"/>
+		<p>Anchor: &lt;a href="someLink" title="Hover text"&gt;Some text&lt;/a&gt;, turns text into links.</p>
+		<a href="https://www.google.com/" title="Title hover text">This is an anchor text that is a link. If you wrap a heading or an image with an anchor, you can create headings and images that are links.</a>
+
+		<p>A link that leads to another html file, title attribute sets the hover text:</p>
+		<a href="other.html" title="Hover over me">My other file</a>
+
+		<p>An anchor wraped around the paragraph:</p>
+		<a href="./other.html">
+			<p>This leads to my other file also.</p>
+		</a>
+
+		<p>This leads to another part of this document:</p>
+		<a href="index.html#ordered_list">
+			<p>This leads to ordered list element on this page.</p>
+		</a>
+
+		<p>Un-ordered list:</p>
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+		</ul>
+		<p>Ordered list:</p>
+		<ol id="ordered_list">
+			<li>Item 1</li>
+			<li>Item 2</li>
+		</ol>
+		<p>Description list:</p>
+		<dl>
+			<dt>Description term</dt>
+			<dd>Description definition 1</dd>
+			<dd>Description definition 2</dd>
+		</dl>
+		<p>Blockquote (blockquote) and quote (q), cite attribute:</p>
+		<p>Abbreviations (abbr)</p>
+		<p>Address (address)</p>
+		<p>Superscript (sup) and subscript (sub)</p>
+		<p>Code (code), pre, var, kbd, samp</p>
+		<time datetime="2016-01-20">20.01.2016</time>
+		<p> My code:
+			<pre><code>this is my code
+			</code></pre>
+		</p>
+	</body>
+</html>
